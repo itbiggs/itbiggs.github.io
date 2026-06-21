@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Software Engineer & Geospatial Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <span class="logo">YourName</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Animated topo background -->
+  <section id="hero">
+    <div id="geo-bg">
+      <svg id="geo-svg" width="100%" height="100%" viewBox="0 0 680 480" preserveAspectRatio="xMidYMid slice">
+        <g id="grid-lines" stroke="#1c252b" stroke-width="0.5"></g>
+
+        <g class="contour" opacity="0.55">
+          <path d="M60,420 C140,380 160,320 120,270 C90,230 140,190 220,200 C300,210 320,260 280,310 C250,350 280,390 340,380" />
+        </g>
+        <g class="contour" opacity="0.4">
+          <path d="M40,440 C130,410 150,340 110,285 C75,238 135,175 230,185 C320,195 345,255 300,315 C265,360 300,405 370,398" />
+        </g>
+        <g class="contour" opacity="0.28">
+          <path d="M20,460 C120,440 145,360 100,300 C60,248 130,160 240,170 C340,182 370,248 320,320 C280,375 320,420 400,415" />
+        </g>
+        <g class="contour-alt" opacity="0.5">
+          <path d="M460,60 C500,100 560,100 580,150 C600,200 540,220 560,270 C575,310 640,320 660,355" />
+        </g>
+        <g class="contour-alt" opacity="0.35">
+          <path d="M440,50 C485,95 555,90 580,145 C605,200 535,225 558,280 C578,320 650,330 678,360" />
+        </g>
+
+        <g id="survey-points" fill="#8fb8cf">
+          <circle class="pt" cx="220" cy="200" r="3"></circle>
+          <circle class="pt" cx="340" cy="380" r="3"></circle>
+          <circle class="pt" cx="560" cy="150" r="3"></circle>
+          <circle class="pt" cx="580" cy="270" r="3"></circle>
+          <circle class="pt" cx="120" cy="270" r="3"></circle>
+        </g>
+
+        <text class="geo-coord" x="42" y="30">40.1020 N</text>
+        <text class="geo-coord" x="42" y="452">88.2272 W</text>
+      </svg>
+    </div>
+
+    <div id="hero-content">
+      <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+      <p class="tagline">Software Engineer &amp; Data Scientist — Geospatial Data</p>
+      <a href="#projects" class="btn">See my work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About me</h2>
+    <p>
+      I'm a rising junior at the University of Illinois Urbana-Champaign, studying
+      Computer Science and Geography &amp; GIS, with a minor in Data Science. I'm currently
+      interning at APTech, where I develop ArcGIS Pro script tools using Python and ArcPy to
+      automate GIS processing workflows. On campus, I'm Chapter President of Phi Sigma Kappa
+      and a CS 124 tutor. Always happy to connect with anyone in software engineering, data
+      science, or GIS!
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <div class="card">
+        <h3>Project Name</h3>
+        <p>Short description of what it does and what you learned.</p>
+        <div class="tags">
+          <span>Python</span><span>ArcPy</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/you/repo" target="_blank">GitHub →</a>
+          <a href="#" target="_blank">Live demo →</a>
+        </div>
+      </div>
+
+      <!-- repeat projects -->
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>ArcGIS Pro / ArcPy</li>
+      <li>SQL</li>
+      <li>QGIS</li>
+      <li>PostGIS</li>
+      <!-- ... -->
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p>I'm open to opportunities. Reach me at <a href="mailto:you@email.com">you@email.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com/you" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/you" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
