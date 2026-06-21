@@ -1,0 +1,171 @@
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0d1114;
+  --surface: #161b1f;
+  --border: #262e34;
+  --text: #e8edf0;
+  --muted: #8a98a3;
+  --accent: #6e93a8;
+  --accent-light: #8fb8cf;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a { color: var(--accent-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Nav === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+nav .logo { font-weight: 600; font-size: 1.1rem; }
+
+nav ul { display: flex; gap: 2rem; list-style: none; }
+nav ul a { color: var(--muted); font-size: 0.9rem; }
+nav ul a:hover { color: var(--text); text-decoration: none; }
+
+/* === Hero with geo background === */
+#hero {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+#geo-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#geo-svg .contour, #geo-svg .contour-alt {
+  fill: none;
+  stroke: #5b7d93;
+  stroke-width: 0.8;
+}
+
+#geo-svg .contour-alt {
+  stroke: #6e93a8;
+  stroke-width: 0.9;
+}
+
+#geo-svg .geo-coord {
+  font-family: 'Courier New', monospace;
+  font-size: 9px;
+  fill: #465a64;
+}
+
+#geo-svg .pt {
+  animation: pulse 2.6s ease-in-out infinite;
+}
+#geo-svg .pt:nth-child(2) { animation-delay: 0.4s; }
+#geo-svg .pt:nth-child(3) { animation-delay: 0.9s; }
+#geo-svg .pt:nth-child(4) { animation-delay: 1.3s; }
+#geo-svg .pt:nth-child(5) { animation-delay: 1.8s; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+#hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem 3.5rem;
+  max-width: 800px;
+}
+
+#hero-content h1 { font-size: 2.6rem; }
+#hero-content .tagline { color: var(--accent-light); }
+
+/* === Sections === */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+h1 { font-size: 3rem; font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 2rem; }
+h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+
+.accent { color: var(--accent-light); }
+.tagline { font-size: 1.2rem; color: var(--muted); margin-bottom: 2rem; }
+
+/* === Button === */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border: 1px solid var(--accent);
+  color: var(--accent-light);
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover { background: rgba(110, 147, 168, 0.12); text-decoration: none; }
+
+/* === Project cards === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+
+.tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.tags span {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  color: var(--muted);
+}
+
+.card-links { display: flex; gap: 1rem; font-size: 0.85rem; }
+
+/* === Skills === */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 0.4rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* === Contact === */
+#contact .social-links { display: flex; gap: 1.5rem; margin-top: 1.5rem; }
+#contact p { color: var(--muted); margin-bottom: 0.5rem; }
