@@ -206,8 +206,103 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll(
-  'section:not(#hero), .card, .gis-card, .timeline-item, .campus-card, .skill-group'
+  'section:not(#hero), .card, .map-tile, .timeline-item, .campus-card, .skill-group'
 ).forEach(el => {
   el.classList.add('reveal');
   revealObserver.observe(el);
 });
+
+// ── Map Modal ────────────────────────────────────────────────────
+(function initMapModal() {
+  const modal = document.getElementById('map-modal');
+  const modalImg = document.getElementById('modal-map-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDescription = document.getElementById('modal-description');
+  const modalTags = document.getElementById('modal-tags');
+  const modalPdfLink = document.getElementById('modal-pdf-link');
+  const modalClose = document.querySelector('.modal-close');
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modalPrev = document.querySelector('.modal-nav-prev');
+  const modalNext = document.querySelector('.modal-nav-next');
+
+  if (!modal) return;
+
+  let currentMapIndex = 0;
+  const mapTiles = Array.from(document.querySelectorAll('.map-tile:not(.map-tile-empty)'));
+
+  // Populate modal with map data
+  function showMap(index) {
+    const tile = mapTiles[index];
+    if (!tile) return;
+
+    const title = tile.getAttribute('data-title');
+    const description = tile.getAttribute('data-description');
+    const tags = tile.getAttribute('data-tags');
+    const pdfUrl = tile.getAttribute('data-pdf');
+    const imgUrl = tile.getAttribute('data-img');
+
+    // Populate modal content
+    modalTitle.textContent = title || 'Map Title';
+    modalDescription.textContent = description || 'No description available.';
+    modalImg.src = imgUrl || '';
+    modalImg.alt = title || 'Map';
+    modalPdfLink.href = pdfUrl || '#';
+
+    // Populate tags
+    modalTags.innerHTML = '';
+    if (tags) {
+      tags.split(',').forEach(tag => {
+        const span = document.createElement('span');
+        span.textContent = tag.trim();
+        modalTags.appendChild(span);
+      });
+    }
+  }
+
+  // Open modal when clicking on a map tile
+  mapTiles.forEach((tile, index) => {
+    tile.addEventListener('click', (e) => {
+      e.preventDefault();
+      currentMapIndex = index;
+      showMap(currentMapIndex);
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Navigation
+  function navigatePrev() {
+    currentMapIndex = (currentMapIndex - 1 + mapTiles.length) % mapTiles.length;
+    showMap(currentMapIndex);
+  }
+
+  function navigateNext() {
+    currentMapIndex = (currentMapIndex + 1) % mapTiles.length;
+    showMap(currentMapIndex);
+  }
+
+  modalPrev.addEventListener('click', navigatePrev);
+  modalNext.addEventListener('click', navigateNext);
+
+  // Close modal
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!modal.classList.contains('active')) return;
+
+    if (e.key === 'Escape') {
+      closeModal();
+    } else if (e.key === 'ArrowLeft') {
+      navigatePrev();
+    } else if (e.key === 'ArrowRight') {
+      navigateNext();
+    }
+  });
+})();
