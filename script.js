@@ -246,7 +246,14 @@ document.querySelectorAll(
     modalDescription.textContent = description || 'No description available.';
     modalImg.src = imgUrl || '';
     modalImg.alt = title || 'Map';
-    modalPdfLink.href = pdfUrl || '#';
+
+    // Show or hide PDF button based on whether PDF exists
+    if (pdfUrl) {
+      modalPdfLink.href = pdfUrl;
+      modalPdfLink.style.display = 'inline-block';
+    } else {
+      modalPdfLink.style.display = 'none';
+    }
 
     // Populate tags
     modalTags.innerHTML = '';

@@ -401,7 +401,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--bg2);
-  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, filter 0.2s;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
 
@@ -418,9 +418,9 @@ h3 { font-size: 1.05rem; font-weight: 600; }
   vertical-align: middle;
 }
 
-/* Featured maps - larger and more prominent */
+/* Featured maps - research posters get more prominence */
 .map-tile-featured {
-  transform: scale(1.35);
+  transform: scale(1.2);
   transform-origin: top center;
   margin-bottom: 2.5rem;
   border-width: 2px;
@@ -429,7 +429,7 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 }
 
 .map-tile-featured:hover {
-  transform: scale(1.35) translateY(-4px);
+  transform: scale(1.2) translateY(-4px);
   border-color: var(--accent);
   z-index: 2;
 }

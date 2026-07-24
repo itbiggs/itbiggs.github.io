@@ -19,7 +19,6 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#campus">Campus</a></li>
       <li><a href="#awards">Awards</a></li>
-      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="resume.pdf" class="btn-sm" target="_blank">Résumé ↗</a>
@@ -57,8 +56,8 @@
         <p>
           Right now I'm interning at APTech, where I build ArcGIS Pro script tools with
           Python and ArcPy that automate GIS workflows, cutting processing time from
-          weeks to minutes. On campus I'm the Chapter President of Phi Sigma Kappa, a Grainger Engineering
-          Career Services Peer, and a Course Assistant for CS 124.
+          weeks to minutes. On campus I'm the Chapter President of Phi Sigma Kappa and a Grainger Engineering
+          Career Services Peer.
         </p>
         <p>
           I'm looking for Summer 2027 internships and always happy to connect with
@@ -107,12 +106,13 @@
         </div>
         <ul class="exp-bullets">
           <li>Developing ArcGIS Pro scripts using Python, ArcPy, and Shapely to automate spatial joins, buffering, and network analysis, replacing manual workflows and reducing processing times from days to minutes</li>
+          <li>Building a machine learning model using PyTorch to automatically align and register aerial imagery, improving georeferencing accuracy and streamlining image processing workflows to enhance company operational efficiency</li>
           <li>Validating automated script outputs against manual results to ensure accuracy, and building recurring QA review systems for GIS technicians and engineers to audit tool performance over time</li>
           <li>Authoring in-depth technical documentation for technicians unfamiliar with scripting, and iterating on tool design based on engineer and technician feedback to align functionality with workflows and goals</li>
           <li>Designing scripts as reusable tools, deployable across large-scale pavement datasets spanning airports, roadways, and military installations to support long-term consulting operations beyond a single project scope</li>
         </ul>
         <div class="exp-tags">
-          <span>Python</span><span>ArcPy</span><span>Shapely</span><span>ArcGIS Pro</span><span>Automation</span><span>QA Testing</span><span>Technical Documentation</span>
+          <span>Python</span><span>PyTorch</span><span>ArcPy</span><span>Shapely</span><span>ArcGIS Pro</span><span>Automation</span><span>Machine Learning</span><span>QA Testing</span><span>Technical Documentation</span>
         </div>
       </div>
 
@@ -122,7 +122,7 @@
             <h3>Data Analyst Intern</h3>
             <span class="company">Applied Technologies for Learning in LAS – UIUC</span>
           </div>
-          <span class="timeline-date">Aug 2025 – Dec 2025</span>
+          <span class="timeline-date">Aug 2024 – Dec 2024</span>
         </div>
         <ul class="exp-bullets">
           <li>Analyzed IT Help Desk ticket data using Excel, Tableau, and Python (pandas), geocoding tickets by department to visualize workload distribution spatially and identify trends in response times across service areas</li>
@@ -130,6 +130,22 @@
         </ul>
         <div class="exp-tags">
           <span>Python</span><span>Tableau</span><span>Excel</span><span>Pandas</span><span>Geocoding</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3>Course Assistant</h3>
+            <span class="company">CS 124: Introduction to Computer Science, UIUC</span>
+          </div>
+          <span class="timeline-date">Aug 2024 – Dec 2024</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Tutored students in foundational Java programming through one-on-one help site, assisting with debugging, assignments, and quizzes while collaborating with instructors and mentoring new assistant tutors</li>
+        </ul>
+        <div class="exp-tags">
+          <span>Java</span><span>Teaching</span><span>Mentoring</span><span>Debugging</span>
         </div>
       </div>
 
@@ -279,58 +295,9 @@
       </div>
 
       <div class="map-tile"
-           data-title="Point Pattern Analysis of Nuclear Power Plant Capacity"
-           data-description="Point pattern analysis of nameplate capacity of nuclear power plants in the US overlayed by kernel density of nuclear power plants over 300 km (300,000 meters)."
-           data-tags="ArcGIS Pro,Point Pattern Analysis,Energy Infrastructure"
-           data-pdf="maps/PointPatternNameplate.pdf"
-           data-img="maps/PointPatternNameplate.png">
-        <img src="maps/PointPatternNameplate.png" alt="Point Pattern Analysis of Nuclear Power Plants">
-        <div class="map-tile-overlay">
-          <h3>Point Pattern Analysis of Nuclear Power Plant Capacity</h3>
-        </div>
-      </div>
-
-      <div class="map-tile"
-           data-title="Diabetes Percentage by Country"
-           data-description="Global choropleth map visualizing diabetes prevalence rates across countries worldwide. Created to identify geographic patterns in diabetes distribution and highlight regions with elevated health concerns."
-           data-tags="ArcGIS Pro,Public Health,Choropleth Mapping"
-           data-pdf="maps/Diabetes.pdf"
-           data-img="maps/Diabetes.png">
-        <img src="maps/Diabetes.png" alt="Diabetes Breakdown">
-        <div class="map-tile-overlay">
-          <h3>Diabetes Percentage by Country</h3>
-        </div>
-      </div>
-
-      <div class="map-tile"
-           data-title="Digital Elevation Model of Grand Canyon, Arizona"
-           data-description="3D terrain visualization of the Grand Canyon region using digital elevation model (DEM) data. Applied hillshade and elevation gradients to emphasize topographic relief and geological features of this iconic landscape."
-           data-tags="ArcGIS Pro,DEM,Terrain Analysis,Cartography"
-           data-pdf="maps/DigitalElevation.pdf"
-           data-img="maps/DigitalElevation.png">
-        <img src="maps/DigitalElevation.png" alt="Digital Elevation Model">
-        <div class="map-tile-overlay">
-          <h3>Digital Elevaton Model of Grand Canyon, Arizona</h3>
-        </div>
-      </div>
-
-      <div class="map-tile"
-           data-title="2024 Election Results by County"
-           data-description="County-level electoral map displaying the 2024 presidential election results across Arizona. Visualized voting patterns to reveal geographic divisions and political landscapes at the county scale."
-           data-tags="ArcGIS Pro,Political Geography,Data Visualization"
-           data-pdf="maps/Election.pdf"
-           data-img="maps/Election.png">
-        <img src="maps/Election.png" alt="Election Map">
-        <div class="map-tile-overlay">
-          <h3>2024 Election Results by County</h3>
-        </div>
-      </div>
-
-      <div class="map-tile"
            data-title="Dijkstra's Algorithm Champaign, Illinois"
            data-description="Implemented Dijkstra's shortest path algorithm to calculate optimal routing between Grainger Engineering Library and Willard Airport. Used OSMnx to extract street network data and NetworkX for graph-based path optimization."
            data-tags="Python,Dijkstra's Algorithm,OSMnx,NetworkX,Network Analysis"
-           data-pdf="maps/DijkstraChampaign.pdf"
            data-img="maps/DijkstraChampaign.png">
         <img src="maps/DijkstraChampaign.png" alt="Dijkstra Champaign">
         <div class="map-tile-overlay">
@@ -339,10 +306,42 @@
       </div>
 
       <div class="map-tile"
+           data-title="Illinois Temperature Kriging"
+           data-description="Geostatistical interpolation of temperature data across Illinois using kriging methodology. Applied spatial autocorrelation techniques to predict temperature values at unmeasured locations based on surrounding weather station observations."
+           data-tags="ArcGIS Pro,Kriging,Geostatistics,Spatial Interpolation"
+           data-img="maps/IllinoisTempKriging.png">
+        <img src="maps/IllinoisTempKriging.png" alt="Illinois Temp Kriging">
+        <div class="map-tile-overlay">
+          <h3>Illinois Temperature Kriging</h3>
+        </div>
+      </div>
+
+      <div class="map-tile"
+           data-title="Remote Sensing Phoenix, Arizona"
+           data-description="NDVI image of Phoenix, Arizona on September 28, 2024 (USGS 2025)."
+           data-tags="ArcGIS Pro,Remote Sensing,NDVI,Spatial Analysis"
+           data-img="maps/PhoenixRemoteSensing.png">
+        <img src="maps/PhoenixRemoteSensing.png" alt="Phoenix Remote Sensing">
+        <div class="map-tile-overlay">
+          <h3>Remote Sensing Phoenix, Arizona</h3>
+        </div>
+      </div>
+
+      <div class="map-tile"
+           data-title="Point Pattern Analysis of Nuclear Power Plant Capacity"
+           data-description="Point pattern analysis of nameplate capacity of nuclear power plants in the US overlayed by kernel density of nuclear power plants over 300 km (300,000 meters)."
+           data-tags="ArcGIS Pro,Point Pattern Analysis,Energy Infrastructure"
+           data-img="maps/PointPatternNameplate.png">
+        <img src="maps/PointPatternNameplate.png" alt="Point Pattern Analysis of Nuclear Power Plants">
+        <div class="map-tile-overlay">
+          <h3>Point Pattern Analysis of Nuclear Power Plant Capacity</h3>
+        </div>
+      </div>
+
+      <div class="map-tile"
            data-title="Los Angeles Point Cloud"
            data-description="3D LiDAR point cloud visualization of downtown Los Angeles terrain and building structures. Processed high-resolution elevation data to create detailed surface models showing urban morphology and building heights."
            data-tags="ArcGIS Pro,LiDAR,Point Cloud,3D Visualization"
-           data-pdf="maps/PointCloud.pdf"
            data-img="maps/PointCloud.png">
         <img src="maps/PointCloud.png" alt="LA Point Cloud">
         <div class="map-tile-overlay">
@@ -350,17 +349,42 @@
         </div>
       </div>
 
-      <div class="map-tile map-tile-featured"
-           data-title="Illinois Temperature Kriging"
-           data-description="Geostatistical interpolation of temperature data across Illinois using kriging methodology. Applied spatial autocorrelation techniques to predict temperature values at unmeasured locations based on surrounding weather station observations."
-           data-tags="ArcGIS Pro,Kriging,Geostatistics,Spatial Interpolation"
-           data-pdf="maps/IllinoisTempKriging.pdf"
-           data-img="maps/IllinoisTempKriging.png">
-        <img src="maps/IllinoisTempKriging.png" alt="Illinois Temp Kriging">
+      <div class="map-tile"
+           data-title="Digital Elevation Model of Grand Canyon, Arizona"
+           data-description="3D terrain visualization of the Grand Canyon region using digital elevation model (DEM) data. Applied hillshade and elevation gradients to emphasize topographic relief and geological features of this iconic landscape."
+           data-tags="ArcGIS Pro,DEM,Terrain Analysis,Cartography"
+           data-img="maps/DigitalElevation.png">
+        <img src="maps/DigitalElevation.png" alt="Digital Elevation Model">
         <div class="map-tile-overlay">
-          <h3>Illinois Temperature Kriging</h3>
+          <h3>Digital Elevation Model of Grand Canyon, Arizona</h3>
         </div>
       </div>
+
+      <!--
+      <div class="map-tile"
+           data-title="Diabetes Percentage by Country"
+           data-description="Global choropleth map visualizing diabetes prevalence rates across countries worldwide. Created to identify geographic patterns in diabetes distribution and highlight regions with elevated health concerns."
+           data-tags="ArcGIS Pro,Public Health,Choropleth Mapping"
+           data-img="maps/Diabetes.png">
+        <img src="maps/Diabetes.png" alt="Diabetes Breakdown">
+        <div class="map-tile-overlay">
+          <h3>Diabetes Percentage by Country</h3>
+        </div>
+      </div>
+      -->
+
+      <!--
+      <div class="map-tile"
+           data-title="2024 Election Results by County"
+           data-description="County-level electoral map displaying the 2024 presidential election results across Arizona. Visualized voting patterns to reveal geographic divisions and political landscapes at the county scale."
+           data-tags="ArcGIS Pro,Political Geography,Data Visualization"
+           data-img="maps/Election.png">
+        <img src="maps/Election.png" alt="Election Map">
+        <div class="map-tile-overlay">
+          <h3>2024 Election Results by County</h3>
+        </div>
+      </div>
+      -->
 
     </div>
   </section>
@@ -425,6 +449,7 @@
           <li>Pandas</li>
           <li>NumPy</li>
           <li>scikit-learn</li>
+          <li>PyTorch</li>
           <li>Tableau</li>
           <li>Excel</li>
           <li>Matplotlib</li>
@@ -477,13 +502,13 @@
       </div>
 
       <div class="campus-card">
-        <div class="campus-icon">{ }</div>
+        <div class="campus-icon">🌍</div>
         <div>
-          <h3>Course Assistant</h3>
-          <span class="company">CS 124: Introduction to Computer Science, UIUC</span>
+          <h3>General Member</h3>
+          <span class="company">Gamma Theta Upsilon (Geography Honors Society)</span>
           <p>
-            Tutored students in foundational Java programming through one-on-one help site, assisting with debugging,
-            assignments, and quizzes while collaborating with instructors and mentoring new assistant tutors.
+            Member of the international geography honors society, recognizing academic excellence in geographic
+            and geospatial sciences.
           </p>
         </div>
       </div>
@@ -496,18 +521,6 @@
           <p>
             Guide engineering students through career development, providing resume reviews, interview preparation,
             and professional networking advice to help students secure internships and full-time positions.
-          </p>
-        </div>
-      </div>
-
-      <div class="campus-card">
-        <div class="campus-icon">🌍</div>
-        <div>
-          <h3>General Member</h3>
-          <span class="company">Gamma Theta Upsilon (Geography Honors Society)</span>
-          <p>
-            Member of the international geography honors society, recognizing academic excellence in geographic
-            and geospatial sciences.
           </p>
         </div>
       </div>
@@ -529,8 +542,8 @@
           <h3>Herbert L. Brown Outstanding Chapter of the Year</h3>
           <span class="company">Phi Sigma Kappa National Fraternity</span>
           <p>
-            Under my leadership, our chapter won Phi Sigma Kappa's Herbert L. Brown Outstanding Chapter of the Year award,
-            recognizing excellence in scholarship, leadership, and chapter operations among all chapters nationwide.
+            Under my leadership, our chapter won Phi Sigma Kappa's Herbert L. Brown Outstanding Chapter of the Year award
+            out of 70+ chapters nationwide, recognizing excellence in scholarship, leadership, and chapter operations.
           </p>
         </div>
       </div>
@@ -541,7 +554,7 @@
           <h3>Dean's List</h3>
           <span class="company">University of Illinois Urbana-Champaign</span>
           <p>
-            Recognized for academic excellence with a semester GPA of 3.5 or higher.
+            Recognized for academic excellence with a 4.0 GPA in Fall 2024 and Spring 2026.
           </p>
         </div>
       </div>
@@ -549,38 +562,27 @@
       <div class="campus-card">
         <div class="campus-icon">🎓</div>
         <div>
-          <h3>Roepke Academic Scholarship</h3>
-          <span class="company">University of Illinois Urbana-Champaign</span>
+          <h3>Howard Roepke Academic Scholarship</h3>
+          <span class="company">Department of Geography & GIS, UIUC</span>
           <p>
-            Merit-based scholarship awarded for outstanding academic achievement and commitment to academic excellence.
+            Competitive merit-based scholarship awarded to Geography & GIS undergraduate majors demonstrating outstanding
+            academic achievement. Endowed by Professor Howard Roepke, a Geography faculty member from 1955-1985.
           </p>
         </div>
       </div>
 
-
-    </div>
-  </section>
-
-  <!-- ── Certifications ────────────────────────────────────────────── -->
-  <section id="certifications">
-    <div class="section-label">Certifications</div>
-    <h2>Certifications</h2>
-    <p class="section-intro">
-      Certifications in progress.
-    </p>
-
-    <div class="campus-grid">
-
-      <!--
       <div class="campus-card">
-        <div class="campus-icon">📜</div>
+        <div class="campus-icon">🌐</div>
         <div>
-          <h3>Certification Name</h3>
-          <span class="company">Issuing Organization</span>
-          <p>Description</p>
+          <h3>Climate Change and GIS Certificate</h3>
+          <span class="company">Esri · <a href="maps/GIS_Climate_Cert.pdf" target="_blank">View Certificate ↗</a></span>
+          <p>
+            Completed professional training course covering geospatial analysis techniques for climate change modeling,
+            environmental impact assessment, and sustainable resource management using ArcGIS tools.
+          </p>
         </div>
       </div>
-      -->
+
 
     </div>
   </section>
