@@ -88,36 +88,24 @@ nav ul a:hover { color: var(--text); text-decoration: none; }
   border-bottom: 1px solid var(--border);
 }
 
-#globe-container {
+.hero-map-background {
   position: absolute;
   inset: 0;
   z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.7;
-}
-
-#globe-svg {
-  width: 600px;
-  height: 600px;
-  max-width: 80vw;
-  max-height: 80vh;
-  filter: drop-shadow(0 0 40px rgba(42, 106, 144, 0.3));
-}
-
-#longitude-lines {
-  animation: rotateGlobe 60s linear infinite;
-  transform-origin: 200px 200px;
-}
-
-@keyframes rotateGlobe {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+  background-color: var(--bg);
+  background-image:
+    /* Tech grid overlay */
+    repeating-linear-gradient(0deg, transparent, transparent 100px, rgba(42, 106, 144, 0.05) 100px, rgba(42, 106, 144, 0.05) 101px),
+    repeating-linear-gradient(90deg, transparent, transparent 100px, rgba(42, 106, 144, 0.05) 100px, rgba(42, 106, 144, 0.05) 101px),
+    /* Diagonal accent lines */
+    repeating-linear-gradient(45deg, transparent, transparent 200px, rgba(110, 147, 168, 0.02) 200px, rgba(110, 147, 168, 0.02) 202px),
+    /* Topographic circles */
+    radial-gradient(circle at 20% 30%, transparent 0%, transparent 20%, rgba(42, 106, 144, 0.03) 20%, rgba(42, 106, 144, 0.03) 21%, transparent 21%),
+    radial-gradient(circle at 80% 70%, transparent 0%, transparent 25%, rgba(42, 106, 144, 0.03) 25%, rgba(42, 106, 144, 0.03) 26%, transparent 26%),
+    radial-gradient(circle at 60% 20%, transparent 0%, transparent 15%, rgba(42, 106, 144, 0.03) 15%, rgba(42, 106, 144, 0.03) 16%, transparent 16%),
+    /* Base gradient */
+    linear-gradient(135deg, rgba(13, 17, 20, 1) 0%, rgba(16, 28, 35, 1) 100%);
+  opacity: 0.8;
 }
 
 .hero-gradient {

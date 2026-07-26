@@ -26,38 +26,7 @@
 
   <!-- ── Hero ─────────────────────────────────────────────────────── -->
   <section id="hero">
-    <div id="globe-container">
-      <svg id="globe-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Globe circle -->
-        <circle cx="200" cy="200" r="180" fill="#0a1520" stroke="#2a4a60" stroke-width="2" opacity="0.9"/>
-
-        <!-- Latitude lines -->
-        <ellipse cx="200" cy="200" rx="180" ry="40" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-        <ellipse cx="200" cy="200" rx="180" ry="80" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-        <ellipse cx="200" cy="200" rx="180" ry="120" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-        <ellipse cx="200" cy="200" rx="180" ry="160" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-
-        <!-- Longitude lines -->
-        <g id="longitude-lines">
-          <ellipse cx="200" cy="200" rx="20" ry="180" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-          <ellipse cx="200" cy="200" rx="60" ry="180" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-          <ellipse cx="200" cy="200" rx="100" ry="180" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-          <ellipse cx="200" cy="200" rx="140" ry="180" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-          <ellipse cx="200" cy="200" rx="180" ry="180" fill="none" stroke="#1a3a50" stroke-width="1" opacity="0.6"/>
-        </g>
-
-        <!-- UIUC marker -->
-        <circle cx="220" cy="180" r="6" fill="#90c8e8" opacity="0.9">
-          <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="220" cy="180" r="3" fill="#ffffff" opacity="1"/>
-
-        <!-- Glow effect -->
-        <circle cx="200" cy="200" r="185" fill="none" stroke="#2a6a90" stroke-width="3" opacity="0.15"/>
-        <circle cx="200" cy="200" r="195" fill="none" stroke="#1a4a6a" stroke-width="5" opacity="0.08"/>
-      </svg>
-    </div>
+    <div class="hero-map-background"></div>
     <div class="hero-gradient"></div>
 
     <div id="hero-content">
