@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isaac Biggs - Software Engineer & Geospatial Data Scientist</title>
+  <title>Isaac Biggs - Geospatial Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +21,7 @@
       <li><a href="#awards">Awards</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="resume.pdf" class="btn-sm" target="_blank">Résumé ↗</a>
+    <a href="resume.pdf" class="btn-sm" target="_blank">Resume ↗</a>
   </nav>
 
   <!-- ── Hero ─────────────────────────────────────────────────────── -->
@@ -51,12 +51,12 @@
         <p>
           I'm a rising junior at UIUC studying Computer Science and Geography & GIS with a
           minor in Data Science. I work at the intersection of code and spatial analysis,
-          writing code that turns raw geospatial data into automated systems.
+          writing code that turns raw geospatial data into actionable insights and decision-making tools.
         </p>
         <p>
           Right now I'm interning at APTech, where I build ArcGIS Pro script tools with
           Python and ArcPy that automate GIS workflows, cutting processing time from
-          weeks to minutes. On campus I'm the Chapter President of Phi Sigma Kappa and a Grainger Engineering
+          weeks to minutes. On campus I'm the Chapter President of Phi Sigma Kappa, a CS Course Assistant, and a Grainger Engineering
           Career Services Peer.
         </p>
         <p>
@@ -105,11 +105,10 @@
           <span class="timeline-date">May 2025 – Present</span>
         </div>
         <ul class="exp-bullets">
-          <li>Developing ArcGIS Pro scripts using Python, ArcPy, and Shapely to automate spatial joins, buffering, and network analysis, replacing manual workflows and reducing processing times from days to minutes</li>
           <li>Building a machine learning model using PyTorch to automatically align and register aerial imagery, improving georeferencing accuracy and streamlining image processing workflows to enhance company operational efficiency</li>
-          <li>Validating automated script outputs against manual results to ensure accuracy, and building recurring QA review systems for GIS technicians and engineers to audit tool performance over time</li>
+          <li>Developing ArcGIS Pro scripts using Python, ArcPy, and Shapely to automate spatial joins, buffering, and network analysis, replacing manual workflows and reducing processing times from days to minutes</li>
           <li>Authoring in-depth technical documentation for technicians unfamiliar with scripting, and iterating on tool design based on engineer and technician feedback to align functionality with workflows and goals</li>
-          <li>Designing scripts as reusable tools, deployable across large-scale pavement datasets spanning airports, roadways, and military installations to support long-term consulting operations beyond a single project scope</li>
+          <li>Designing scripts as reusable tools, deployable across large-scale geospatial datasets spanning airports, roadways, and military installations to support long-term consulting operations beyond a single project scope</li>
         </ul>
         <div class="exp-tags">
           <span>Python</span><span>PyTorch</span><span>ArcPy</span><span>Shapely</span><span>ArcGIS Pro</span><span>Automation</span><span>Machine Learning</span><span>QA Testing</span><span>Technical Documentation</span>
@@ -188,6 +187,24 @@
 
       <div class="card">
         <div class="card-top">
+          <h3>P-Median Housing Optimization</h3>
+          <div class="card-links">
+            <a href="https://github.com/itbiggs/P_Median_Housing_Optimization" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <p>
+          Optimized placement of 10 housing projects across Cook County by integrating 216,000+ property sales records
+          with Census data to identify gentrification-vulnerable neighborhoods, using Python and PuLP for P-median linear programming.
+          Implemented K-Means clustering to aggregate 836 neighborhoods into 200 demand zones, reducing computational complexity
+          while achieving optimal facility placement that minimizes weighted distance to high-risk populations.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>PuLP</span><span>K-Means</span><span>Jupyter</span><span>Geospatial Analysis</span><span>Linear Programming</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
           <h3>Transit Delay Predictor</h3>
           <div class="card-links">
             <a href="https://github.com/itbiggs/TransitPredictor" target="_blank">GitHub ↗</a>
@@ -238,25 +255,29 @@
         </div>
       </div>
 
+
+    </div>
+
+    <h2 style="margin-top: 4rem; margin-bottom: 1.5rem;">Currently Working On</h2>
+
+    <div class="project-grid">
       <div class="card">
         <div class="card-top">
-          <h3>P-Median Affordable Housing Optimization</h3>
+          <h3>Natural Disaster Prediction Model</h3>
           <div class="card-links">
-            <a href="https://github.com/itbiggs/P_Median_Housing_Optimization" target="_blank">GitHub ↗</a>
+            <span style="color: var(--accent); font-size: 0.8rem;">In Development</span>
           </div>
         </div>
         <p>
-          Optimized placement of 10 affordable housing centers across Cook County by integrating 216,000+ property sales records
-          with Census data to identify gentrification-vulnerable neighborhoods, using Python and PuLP for P-median linear programming.
-          Implemented K-Means clustering to aggregate 836 neighborhoods into 200 demand zones, reducing computational complexity
-          while achieving optimal facility placement that minimizes weighted distance to high-risk populations.
+          Building a machine learning model using PyTorch and satellite imagery to predict natural disaster risk zones
+          and severity levels. Integrating climate data, historical disaster records, and remote sensing imagery to train
+          convolutional neural networks for early warning systems. Aiming to improve disaster preparedness and response
+          planning for vulnerable regions through geospatial predictive analytics.
         </p>
         <div class="tags">
-          <span>Python</span><span>PuLP</span><span>K-Means</span><span>Jupyter</span><span>Geospatial Analysis</span><span>Linear Programming</span>
+          <span>Python</span><span>PyTorch</span><span>Remote Sensing</span><span>CNNs</span><span>Satellite Imagery</span><span>Climate Data</span>
         </div>
       </div>
-
-
     </div>
   </section>
 
@@ -430,6 +451,15 @@
         </ul>
       </div>
       <div class="skill-group">
+        <h4>Web Development</h4>
+        <ul>
+          <li>React</li>
+          <li>Flask</li>
+          <li>Node.js</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="skill-group">
         <h4>GIS & Mapping</h4>
         <ul>
           <li>ArcGIS Pro</li>
@@ -441,15 +471,18 @@
           <li>Leaflet</li>
           <li>GeoPandas</li>
           <li>Shapely</li>
+          <li>Geopy</li>
         </ul>
       </div>
       <div class="skill-group">
-        <h4>Data Analysis</h4>
+        <h4>Data Analysis & ML</h4>
         <ul>
           <li>Pandas</li>
           <li>NumPy</li>
           <li>scikit-learn</li>
           <li>PyTorch</li>
+          <li>NetworkX</li>
+          <li>PuLP</li>
           <li>Tableau</li>
           <li>Excel</li>
           <li>Matplotlib</li>
@@ -592,14 +625,13 @@
     <div class="section-label">Contact</div>
     <h2>Get in touch</h2>
     <p class="contact-intro">
-      Open to Summer 2027 internships in software engineering, data science, and GIS.
-      Always happy to talk shop. Reach out.
+      Interested in Summer 2027 internships in software engineering, data science, and GIS. Always happy to talk!
     </p>
     <a href="mailto:isaacbiggs24@gmail.com" class="contact-email">isaacbiggs24@gmail.com</a>
     <div class="social-links">
       <a href="https://github.com/isaacbiggs" target="_blank">GitHub ↗</a>
       <a href="https://linkedin.com/in/isaacbiggs" target="_blank">LinkedIn ↗</a>
-      <a href="resume.pdf" target="_blank">Résumé ↗</a>
+      <a href="resume.pdf" target="_blank">Resume ↗</a>
     </div>
   </section>
 
