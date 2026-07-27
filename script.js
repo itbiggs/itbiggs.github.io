@@ -1,8 +1,4 @@
-// ── Globe (SVG-based, no WebGL needed) ──────────────────────────
-// Globe is now pure SVG with CSS animation in index.html
-
-/*
-// Old WebGL Globe - Commented out
+// ── Globe (WebGL with Three.js) ─────────────────────────────────
 (function initGlobe() {
   const hero = document.getElementById('hero');
   const canvas = document.getElementById('globe-canvas');
@@ -184,7 +180,6 @@
     renderer.setSize(nW, nH);
   });
 })();
-*/
 
 // ── Smooth scroll for nav links ──────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(link => {

@@ -26,9 +26,8 @@
 
   <!-- ── Hero ─────────────────────────────────────────────────────── -->
   <section id="hero">
-    <div class="hero-map-background"></div>
+    <canvas id="globe-canvas"></canvas>
     <div class="hero-gradient"></div>
-
     <div id="hero-content">
       <p class="hero-label">Geospatial Software Engineer, Developer, and Analyst</p>
       <h1>Isaac Biggs<span class="accent"></span></h1>
@@ -65,6 +64,7 @@
         </p>
       </div>
       <div class="about-meta">
+        <img src="Headshot.JPG" alt="Isaac Biggs" class="headshot">
         <div class="meta-item">
           <span class="meta-label">Degree</span>
           <span>B.S. Computer Science + Geography & GIS</span>
@@ -76,14 +76,6 @@
         <div class="meta-item">
           <span class="meta-label">School</span>
           <span>University of Illinois Urbana-Champaign</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Currently</span>
-          <span>Geospatial Software Engineering Intern @ APTech</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Looking for</span>
-          <span>Summer 2027 Internship</span>
         </div>
       </div>
     </div>
@@ -212,10 +204,8 @@
           </div>
         </div>
         <p>
-          Built a Python machine learning pipeline with scikit-learn and GTFS transit data, integrating SQLite and Visual
-          Crossing Weather API to engineer weather-based features and improve delay prediction accuracy by 20%.
-          Visualized delay patterns with Pandas and Matplotlib, uncovering peak congestion periods, high-risk routes, and
-          time-based trends that informed data-driven spatial planning.
+          Built a geospatial ML pipeline (XGBoost, scikit-learn) on Chicago Transit Authority GTFS data with SQLite persistence, engineering weather and spatial features to generate 13,800+ delay predictions across 144 stops.
+          Deployed an interactive MapLibre GL JS web map visualizing those predictions by month and time of day.
         </p>
         <!--
         <div class="project-video">
@@ -225,7 +215,7 @@
         </div>
         -->
         <div class="tags">
-          <span>Python</span><span>scikit-learn</span><span>SQLite</span><span>Pandas</span><span>Matplotlib</span><span>Jupyter</span>
+          <span>Python</span><span>scikit-learn</span><span>SQLite</span><span>Pandas</span><span>XGBoost</span><span>Jupyter Notebok</span>
         </div>
       </div>
 
@@ -631,7 +621,7 @@
     <div class="social-links">
       <a href="https://github.com/isaacbiggs" target="_blank">GitHub ↗</a>
       <a href="https://linkedin.com/in/isaacbiggs" target="_blank">LinkedIn ↗</a>
-      <a href="resume.pdf" target="_blank">Resume ↗</a>
+      <a href="IsaacBiggsResumeJuly2026.pdf" target="_blank">Resume ↗</a>
     </div>
   </section>
 
@@ -640,6 +630,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
